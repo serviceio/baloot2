@@ -1,0 +1,10 @@
+{
+  "name": "Baloot Game",
+  "description": "A multiplayer Baloot card game with voice chat and real-time score keeping.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

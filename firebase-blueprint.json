@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "GameState": {
+      "title": "GameState",
+      "description": "The current state of the game",
+      "type": "object",
+      "properties": {
+        "players": {
+          "type": "array"
+        },
+        "activePlayerIds": {
+          "type": "array"
+        },
+        "scores": {
+          "type": "object"
+        },
+        "status": {
+          "type": "string"
+        },
+        "dealerIndex": { "type": "number" },
+        "turnIndex": { "type": "number" },
+        "publicCard": { "type": "object" },
+        "tableCards": { "type": "array" },
+        "tricks": { "type": "array" },
+        "bidPhase": { "type": "number" },
+        "currentBid": { "type": "object" },
+        "showLog": { "type": "boolean" },
+        "revealedProjects": { "type": "array" }
+      }
+    }
+  },
+  "firestore": {
+    "games/{gameId}": {
+      "schema": { "$ref": "#/entities/GameState" },
+      "description": "Game sessions"
+    }
+  }
+}
